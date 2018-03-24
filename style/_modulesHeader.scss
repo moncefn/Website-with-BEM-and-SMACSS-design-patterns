@@ -1,16 +1,21 @@
 .header__search {
 	background: green;
+	flex: 3;
 }
 .header__location {
 	background: blue;
+	flex: 3;
 }
 .header__title {
 	background: yellow;
+	flex: 12;
 }
 .header__name {
 	background: pink;
+	flex: 3;
 }
 .header__button {
 	background: gray;
 	border: 1px solid red;
+	flex: 1;
 }

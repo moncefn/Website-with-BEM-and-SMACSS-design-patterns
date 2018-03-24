@@ -4,55 +4,113 @@
   margin: 0; }
 
 body {
-  background: black; }
+  background: black;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 75px 75px 6fr;
+  grid-auto-flow: row; }
 
 .header {
   background: red;
-  padding: 10px; }
+  grid-column: 1 / 10;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
 
 .navbar {
+  grid-column: 1 / 10;
+  grid-row: 2;
   background: blue;
-  padding: 10px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
 
 .container {
-  background: green;
-  padding: 10px; }
+  grid-column: 1 / 8;
+  grid-row: 3;
+  background: purple;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 300px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-auto-flow: row; }
 
 .sidebar {
-  background: purple;
-  padding: 10px; }
+  grid-column: 8 / 10;
+  grid-row: 3;
+  background: purple; }
 
 .container__backgroundHeader {
-  background: yellow; }
+  background: yellow;
+  height: 150px;
+  grid-row: 1;
+  grid-column: 1 / 3; }
 
 .container__poster {
-  background: orange; }
+  background: orange;
+  grid-row: 2;
+  grid-column: 1;
+  margin-left: 20px; }
 
 .container__post {
-  background: red; }
+  margin-right: 20px;
+  background: red;
+  grid-row: 2;
+  grid-column: 2; }
 
 .header__search {
-  background: green; }
+  background: green;
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3; }
 
 .header__location {
-  background: blue; }
+  background: blue;
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3; }
 
 .header__title {
-  background: yellow; }
+  background: yellow;
+  -webkit-box-flex: 12;
+  -ms-flex: 12;
+  flex: 12; }
 
 .header__name {
-  background: pink; }
+  background: pink;
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3; }
 
 .header__button {
   background: gray;
-  border: 1px solid red; }
+  border: 1px solid red;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 .navbar__button {
   background: orange;
-  border: 1px solid red; }
+  border: 1px solid red;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 .sidebar__online {
-  background: pink; }
+  background: pink;
+  height: 300px; }
 
 .sidebar__offline {
-  background: green; }
+  background: blue;
+  height: 300px; }
