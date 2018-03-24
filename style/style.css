@@ -1,0 +1,58 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  background: black; }
+
+.header {
+  background: red;
+  padding: 10px; }
+
+.navbar {
+  background: blue;
+  padding: 10px; }
+
+.container {
+  background: green;
+  padding: 10px; }
+
+.sidebar {
+  background: purple;
+  padding: 10px; }
+
+.container__backgroundHeader {
+  background: yellow; }
+
+.container__poster {
+  background: orange; }
+
+.container__post {
+  background: red; }
+
+.header__search {
+  background: green; }
+
+.header__location {
+  background: blue; }
+
+.header__title {
+  background: yellow; }
+
+.header__name {
+  background: pink; }
+
+.header__button {
+  background: gray;
+  border: 1px solid red; }
+
+.navbar__button {
+  background: orange;
+  border: 1px solid red; }
+
+.sidebar__online {
+  background: pink; }
+
+.sidebar__offline {
+  background: green; }
