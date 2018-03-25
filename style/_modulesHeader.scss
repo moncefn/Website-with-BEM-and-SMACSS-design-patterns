@@ -1,21 +1,33 @@
 .header__search {
-	background: green;
+	padding-top: 20px;
+	background: #38a6a6;
 	flex: 3;
 }
 .header__location {
-	background: blue;
+	padding-top: 10px;
+	color: #a3afb6;
 	flex: 3;
+	&__text {
+		font-size: 12px;
+	}
 }
 .header__title {
-	background: yellow;
+	padding-top: 20px;	
+	font-family: "Cookie", cursive;
+	color: 	#58666c;
 	flex: 12;
 }
 .header__name {
-	background: pink;
+	padding-top: 20px;	
+	color: 	#58666c;
 	flex: 3;
+	font-size: 12px;
+	font-family: "Open Sans", sans-serif;
+
 }
 .header__button {
-	background: gray;
-	border: 1px solid red;
+	padding-top: 30px;	
 	flex: 1;
+
+
 }

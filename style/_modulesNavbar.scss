@@ -1,5 +1,11 @@
 .navbar__button {
-	background: orange;
-	border: 1px solid red;
+	background: #2c3539;
+	padding-top: 20px;	
+	font-size: 10px;
 	flex: 1;
+	&:hover {
+	background: #111517;
+	cursor: pointer;
+		
+	}
 }
