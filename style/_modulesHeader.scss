@@ -2,32 +2,38 @@
 	padding-top: 20px;
 	background: #38a6a6;
 	flex: 3;
+	text-align: center;	
 }
 .header__location {
-	padding-top: 10px;
+	padding-top: 30px;
 	color: #a3afb6;
 	flex: 3;
+	&__icon {
+		float: left;
+		margin-left: 15px;
+	}
 	&__text {
 		font-size: 12px;
+		float: left;
+		margin-left: 15px;
+		font-family: "Open Sans", sans-serif;
 	}
 }
 .header__title {
 	padding-top: 20px;	
 	font-family: "Cookie", cursive;
+	text-align: center;
 	color: 	#58666c;
 	flex: 12;
 }
 .header__name {
-	padding-top: 20px;	
+	padding-top: 25px;	
 	color: 	#58666c;
 	flex: 3;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: "Open Sans", sans-serif;
-
 }
 .header__button {
 	padding-top: 30px;	
 	flex: 1;
-
-
 }

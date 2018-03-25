@@ -5,10 +5,8 @@
 	box-sizing: border-box;
 	margin: 0;
 }
-
 body {
 	background: white;
-	text-align: center;
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
 	grid-template-rows: 75px 75px 6fr;

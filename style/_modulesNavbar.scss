@@ -1,11 +1,11 @@
 .navbar__button {
 	background: #2c3539;
 	padding-top: 20px;	
-	font-size: 10px;
+	font-size: 9px;
 	flex: 1;
+	text-align: center;
 	&:hover {
 	background: #111517;
 	cursor: pointer;
-		
 	}
 }

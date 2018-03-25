@@ -1,0 +1,23 @@
+// ==========================Status online/offline colors==========================
+.sidebar__online__person__statusdiv__status {
+					background: green;
+}
+.sidebar__offline__person__statusdiv__status {
+					background: gray;
+}
+// ==========================Specific Posts==========================
+#container__post1 {
+	#container__post1__backgroundHeader1 {
+		background-image: url('../images/container__post__backgroundHeader1.jpg');
+	}
+}
+#container__post2 {
+	#container__post2__backgroundHeader2 {
+		background-image: url('../images/container__post__backgroundHeader2.jpg');
+	}
+}
+#container__post3 {
+	#container__post3__backgroundHeader3 {
+		background-image: url('../images/container__post__backgroundHeader3.jpg');
+	}
+}
