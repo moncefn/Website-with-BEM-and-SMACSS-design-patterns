@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: line;
 }
+
 .navbar {
 	color: #869094;
 	grid-column: 1 / 10;
@@ -12,22 +13,38 @@
 	flex-direction: line;
 	font-family: "Open Sans", sans-serif;
 }
+
 .container {
 	color: #58666c;
 	grid-column: 1 / 8;
 	grid-row: 3;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 200px 1fr;
+	grid-template-rows: 200px 1fr 1fr;
 	grid-row-gap: 30px;
 	grid-column-gap: 30px;
 	grid-auto-flow: row;
 	font-family: "Open Sans", sans-serif;
 }
+
 .sidebar {
 	color: #58666c;
 	grid-column: 8 / 10;
 	grid-row: 3;
 	font-family: "Open Sans", sans-serif;
 	background: #edf1f2;
+}
+
+@media(max-width: $break-small){
+	.navbar {
+		flex-direction: column;
+	}
+	.container {
+		grid-column: 1 / 10;
+	}
+
+	.sidebar {
+		grid-column: 1 / 10;
+		grid-row: 4;
+	}
 }

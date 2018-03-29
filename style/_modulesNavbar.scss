@@ -9,3 +9,9 @@
 	cursor: pointer;
 	}
 }
+
+@media(max-width: $break-small){
+	.navbar__button {
+	border-bottom: 1px solid #111517;
+	}
+}

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 @import url('https://fonts.googleapis.com/css?family=Cookie');
+$break-small: 700px;
 
 * {
 	box-sizing: border-box;
@@ -11,4 +12,10 @@ body {
 	grid-template-columns: repeat(9, 1fr);
 	grid-template-rows: 75px 75px 6fr;
 	grid-auto-flow: row;
+}
+
+@media(max-width: $break-small){
+	body {
+	grid-template-rows: 75px 530px 6fr 500px;
+	}
 }
