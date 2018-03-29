@@ -106,12 +106,10 @@
 		}
 	}
 	&__footer{
-		display: flex;
-		flex-direction: line;
 		font-size: 14px;
 		height: 35px;	
 		&__likes {
-			flex : 1;
+			float: 	left;
 			padding-top: 10px;
 			&__logo{
 				float: 	left;
@@ -123,7 +121,7 @@
 			}
 		}
 		&__comments {
-			flex : 4;
+			float: 	left;
 			padding-top: 10px;
 			&__logo{
 				float: 	left;
