@@ -73,8 +73,9 @@ body {
 
 .container__backgroundHeader {
   background-image: url("../images/container__backgroundHeader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: 0% 35%;
-  background-size: 100%;
   color: white;
   grid-row: 1;
   grid-column: 1 / 3;
@@ -128,7 +129,9 @@ body {
   position: relative;
   margin-bottom: 30px; }
   .container__post__backgroundHeader {
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-position: 0% 35%;
     height: 150px;
     border-radius: 15px 50px 0px 0px; }
