@@ -4,29 +4,8 @@ html(lang='en')
 		meta(charset='UTF-8')
 		title Webdesign
 	body
-		//- include ./parts/data.pug
-		.container1
-			.container1__navbar
-				h2.container1__navbar__button Tours
-				h2.container1__navbar__button Locations
-				h2.container1__navbar__button Events
-				h2.container1__navbar__button Contact
-				.container1__navbar__brand
-					img.container1__navbar__brand__logo
-					h2.container1__navbar__brand__name
-			h1.container1__title
-
-			.container1__activities
-				.container1__activities__leftsection
-				.container1__activities__middlesection
-				.container1__activities__rightsection
-		.container2
-			.container2__picture
-			.container2__informations
-		.container3
-			.container3__title
-			.container3__informations
-		.container4
-			.container4__locations
-		.container5
-			.footerbar
+		include ./parts/container1.pug
+		include ./parts/container2.pug
+		include ./parts/container3.pug
+		include ./parts/container4.pug
+		include ./parts/container5.pug
