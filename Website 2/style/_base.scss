@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-image: url(../images/webdesign.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.underbody {
+	background: white;
+	text-align: center;	
+	opacity: 0.5;
+	font-family: "Open Sans", sans-serif;
+}

@@ -1,0 +1,15 @@
+.container4__locations {
+	display: flex;
+	flex-direction: line;
+	background: pink;
+	padding-top: 100px;
+	&__leftSection {
+		flex: 2;
+	}
+	&__middleSection {
+		flex: 3;
+	}
+	&__rightSection {
+		flex: 2;
+	}
+}

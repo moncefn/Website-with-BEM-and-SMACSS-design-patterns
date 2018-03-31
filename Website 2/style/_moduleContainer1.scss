@@ -1,0 +1,29 @@
+.container1__navbar {
+	background: yellow;
+	display: flex;
+	flex-direction: line;
+	height: 130px;
+	&__button {
+		flex: 1;
+	}
+}
+
+.container1__activities {
+	background: pink;
+	display: flex;
+	flex-direction: line;
+	position: absolute;
+	left: 0; 
+	right: 0; 
+	bottom: -600px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1030px;
+	height: 800px;
+	&__leftSection, &__rightSection {
+		flex: 1;
+	}
+	&__middleSection {
+		flex: 2;
+	}
+}
