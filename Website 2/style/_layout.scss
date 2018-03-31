@@ -1,6 +1,9 @@
 .container1 {
 	height: 830px;
 	position: relative;
+	background-image: url('../images/container1Background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .container2 {
@@ -13,6 +16,9 @@
 }
 
 .container3 {
+	background-image: url('../images/container3Background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: line;
 	height: 1120px;
@@ -27,6 +33,9 @@
 }
 
 .container5 {
+	background-image: url('../images/container5Background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 	height: 130px;
 	position: relative;
 	font-family: "Open Sans", sans-serif;
