@@ -1,9 +1,53 @@
 .container2__informations {
-	flex: 3;
-	background: yellow;
+	flex: 4;
+	&__title{
+		margin: auto;
+		margin-left: 100px;
+		margin-right: 70px;
+		margin-top: 30px;
+		text-align: left;
+	}
+	&__block {
+		margin: auto;
+		margin-left: 100px;
+		margin-right: 70px;
+		margin-top: 10px;
+		background: blue;
+		height: 100px;
+	}
+	&__text {
+		margin-top: 50px;
+		margin-right: 70px;
+		margin-left: 100px;
+	}
+	&__booker {
+		margin-top: 80px;
+		margin-left: 100px;
+		display: flex;
+		flex-direction: line;
+		height: 70px;
+		&__price {
+			font-size: 2.5em;
+			width: 150px;
+			padding-top: auto;
+		}
+		&__bookButton {
+			background: red;
+			border: none;
+			width: 150px;
+			
+		}
+	}
 }
 
 .container2__pictureContainer {
-	flex: 2;
-	background: pink;
+	flex: 3;
+	&__picture {
+		display: block;
+		width: 400px;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
+

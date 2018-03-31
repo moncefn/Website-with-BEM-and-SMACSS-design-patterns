@@ -9,7 +9,15 @@
 	margin-right: auto;
 	width: 1100px;
 	height: 130px;
+	font-family: "Open Sans", sans-serif;
 	.container5__footerbar__button {
 		flex: 1;
+		background: none;
+		border: none;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		color: black;
+		font-weight: bold;
+		font-family: "Open Sans", sans-serif;
 	}
 }

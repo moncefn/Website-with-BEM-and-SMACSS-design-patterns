@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Cookie");
+@import url("https://fonts.googleapis.com/css?family=Anton");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -13,19 +14,17 @@ body {
 .underbody {
   background: white;
   text-align: center;
-  opacity: 0.9;
-  font-family: "Open Sans", sans-serif; }
+  opacity: 0.9; }
 
 h1 {
   font-size: 60px; }
 
 .container1 {
-  background: green;
   height: 830px;
   position: relative; }
 
 .container2 {
-  background: red;
+  background: #dadde2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +37,6 @@ h1 {
   font-family: "Open Sans", sans-serif; }
 
 .container3 {
-  background: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,13 +48,12 @@ h1 {
   font-family: "Open Sans", sans-serif; }
 
 .container4 {
-  background: red;
+  background: #dadde2;
   height: 1300px;
   padding-top: 90px;
   font-family: "Open Sans", sans-serif; }
 
 .container5 {
-  background: green;
   height: 130px;
   position: relative;
   font-family: "Open Sans", sans-serif; }
@@ -85,7 +82,6 @@ h1 {
     font-family: "Open Sans", sans-serif; }
 
 .container1__activities {
-  background: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,41 +99,194 @@ h1 {
   height: 800px;
   font-family: "Open Sans", sans-serif; }
   .container1__activities__leftSection, .container1__activities__rightSection {
+    height: 630px;
+    margin-top: 50px; }
+  .container1__activities__leftSection, .container1__activities__middleSection, .container1__activities__rightSection {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
-  .container1__activities__middleSection {
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2; }
+    flex: 1;
+    background: white; }
+    .container1__activities__leftSection__picture, .container1__activities__middleSection__picture, .container1__activities__rightSection__picture {
+      width: 95%;
+      margin-top: 8px; }
+    .container1__activities__leftSection__title, .container1__activities__middleSection__title, .container1__activities__rightSection__title {
+      text-transform: uppercase;
+      font-size: 2.3em; }
+    .container1__activities__leftSection__location, .container1__activities__middleSection__location, .container1__activities__rightSection__location {
+      margin-top: 30px; }
+    .container1__activities__leftSection__text, .container1__activities__middleSection__text, .container1__activities__rightSection__text {
+      margin-top: 10px; }
+    .container1__activities__leftSection__footerinfo, .container1__activities__middleSection__footerinfo, .container1__activities__rightSection__footerinfo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: line;
+      flex-direction: line;
+      width: 80%;
+      margin: auto;
+      margin-top: 60px; }
+      .container1__activities__leftSection__footerinfo__difficulty, .container1__activities__leftSection__footerinfo__departure, .container1__activities__middleSection__footerinfo__difficulty, .container1__activities__middleSection__footerinfo__departure, .container1__activities__rightSection__footerinfo__difficulty, .container1__activities__rightSection__footerinfo__departure {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+        .container1__activities__leftSection__footerinfo__difficulty__title, .container1__activities__leftSection__footerinfo__departure__title, .container1__activities__middleSection__footerinfo__difficulty__title, .container1__activities__middleSection__footerinfo__departure__title, .container1__activities__rightSection__footerinfo__difficulty__title, .container1__activities__rightSection__footerinfo__departure__title {
+          text-transform: uppercase; }
 
 .container2__informations {
-  -webkit-box-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background: yellow; }
+  -webkit-box-flex: 4;
+  -ms-flex: 4;
+  flex: 4; }
+  .container2__informations__title {
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 70px;
+    margin-top: 30px;
+    text-align: left; }
+  .container2__informations__block {
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 70px;
+    margin-top: 10px;
+    background: blue;
+    height: 100px; }
+  .container2__informations__text {
+    margin-top: 50px;
+    margin-right: 70px;
+    margin-left: 100px; }
+  .container2__informations__booker {
+    margin-top: 80px;
+    margin-left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: line;
+    flex-direction: line;
+    height: 70px; }
+    .container2__informations__booker__price {
+      font-size: 2.5em;
+      width: 150px;
+      padding-top: auto; }
+    .container2__informations__booker__bookButton {
+      background: red;
+      border: none;
+      width: 150px; }
 
 .container2__pictureContainer {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  background: pink; }
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3; }
+  .container2__pictureContainer__picture {
+    display: block;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .container3__informations {
+  -webkit-box-flex: 5;
+  -ms-flex: 5;
+  flex: 5; }
+  .container3__informations__informationsContainer {
+    background: white;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px; }
+    .container3__informations__informationsContainer__topSection, .container3__informations__informationsContainer__middleSection, .container3__informations__informationsContainer__bottomSection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: line;
+      flex-direction: line; }
+      .container3__informations__informationsContainer__topSection__imageContainer, .container3__informations__informationsContainer__middleSection__imageContainer, .container3__informations__informationsContainer__bottomSection__imageContainer {
+        -webkit-box-flex: 4;
+        -ms-flex: 4;
+        flex: 4; }
+        .container3__informations__informationsContainer__topSection__imageContainer__image, .container3__informations__informationsContainer__middleSection__imageContainer__image, .container3__informations__informationsContainer__bottomSection__imageContainer__image {
+          width: 250px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 20px; }
+      .container3__informations__informationsContainer__topSection__rightContainer, .container3__informations__informationsContainer__middleSection__rightContainer, .container3__informations__informationsContainer__bottomSection__rightContainer {
+        padding: 10px;
+        -webkit-box-flex: 6;
+        -ms-flex: 6;
+        flex: 6;
+        text-align: left; }
+        .container3__informations__informationsContainer__topSection__rightContainer__subtitle, .container3__informations__informationsContainer__middleSection__rightContainer__subtitle, .container3__informations__informationsContainer__bottomSection__rightContainer__subtitle {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: line;
+          flex-direction: line; }
+        .container3__informations__informationsContainer__topSection__rightContainer__text, .container3__informations__informationsContainer__middleSection__rightContainer__text, .container3__informations__informationsContainer__bottomSection__rightContainer__text {
+          margin-top: 20px; }
+        .container3__informations__informationsContainer__topSection__rightContainer__button, .container3__informations__informationsContainer__middleSection__rightContainer__button, .container3__informations__informationsContainer__bottomSection__rightContainer__button {
+          background: red;
+          border: none;
+          width: 150px;
+          height: 50px;
+          margin-top: 20px;
+          margin-left: 0px; }
+
+.container3__title {
   -webkit-box-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background: pink; }
+  text-align: left;
+  padding-top: 100px;
+  color: white; }
+  .container3__title__groupSize {
+    text-transform: uppercase; }
+  .container3__title__bigClimbing {
+    text-transform: uppercase;
+    font-size: 5em; }
 
-.container3__title {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  background: yellow; }
-
+/* 
+.container3
+	.container3__informations
+		.container3__informations__informationsContainer
+			.container3__informations__informationsContainer__topSection
+				.container3__informations__informationsContainer__topSection__imageContainer
+					img.container3__informations__informationsContainer__topSection__imageContainer__image(src='../images/container3__informations__informationsContainer__topSection__imageContainer__image.png')
+				.container3__informations__informationsContainer__topSection__rightContainer
+					h1.container3__informations__informationsContainer__topSection__rightContainer__title Mont Whitney
+					.container3__informations__informationsContainer__topSection__rightContainer__subtitle
+						p.container3__informations__informationsContainer__topSection__rightContainer__subtitle__date 5th July
+						p.container3__informations__informationsContainer__topSection__rightContainer__subtitle__days 8 Days
+							p.container3__informations__informationsContainer__topSection__rightContainer__subtitle__peopleLeft 5 people left
+						p.container3__informations__informationsContainer__topSection__rightContainer__text container3__informations__informationsContainer__topSection__rightContainer__text
+						button.container3__informations__informationsContainer__topSection__rightContainer__button Book This
+			.container3__informations__informationsContainer__middleSection
+				.container3__informations__informationsContainer__middleSection__imageContainer
+					img.container3__informations__informationsContainer__middleSection__imageContainer__image(src='../images/container3__informations__informationsContainer__middleSection__imageContainer__image.png')
+				.container3__informations__informationsContainer__middleSection__rightContainer
+					h1.container3__informations__informationsContainer__middleSection__rightContainer__title Oukaimeden
+					p.container3__informations__informationsContainer__middleSection__rightContainer__text container3__informations__informationsContainer__middleSection__rightContainer__text
+					a.container3__informations__informationsContainer__middleSection__rightContainer__link View this tour
+			.container3__informations__informationsContainer__bottomSection
+				.container3__informations__informationsContainer__bottomSection__imageContainer
+					img.container3__informations__informationsContainer__bottomSection__imageContainer__image(src='../images/container3__informations__informationsContainer__bottomSection__imageContainer__image.png')
+				.container3__informations__informationsContainer__bottomSection__rightContainer
+					h1.container3__informations__informationsContainer__bottomSection__rightContainer__title Alps Mountains
+					p.container3__informations__informationsContainer__bottomSection__rightContainer__text container3__informations__informationsContainer__middleSection__rightContainer__text
+					a.container3__informations__informationsContainer__bottomSection__rightContainer__link View this tour
+	.container3__title
+		h2.container3__title__groupSize
+		img.container3__title__peopleLogo
+		h1.container3__title__bigClimbing Climbing
+*/
 .container4__text {
   width: 500px;
-  padding-top: 30px;
   margin: auto; }
 
 .container4__locations {
@@ -148,22 +297,74 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: line;
   flex-direction: line;
-  background: pink;
-  margin-top: 68px;
-  height: 700px; }
-  .container4__locations__leftSection {
+  margin: auto;
+  margin-top: 95px;
+  height: 770px;
+  width: 1050px; }
+  .container4__locations__leftSection, .container4__locations__rightSection, .container4__locations__middleSection {
+    background: white; }
+    .container4__locations__leftSection__date, .container4__locations__rightSection__date, .container4__locations__middleSection__date {
+      margin-top: 30px; }
+    .container4__locations__leftSection__location, .container4__locations__rightSection__location, .container4__locations__middleSection__location {
+      margin-top: 30px;
+      font-size: 2.2em;
+      text-transform: uppercase; }
+    .container4__locations__leftSection__text, .container4__locations__rightSection__text, .container4__locations__middleSection__text {
+      width: 80%;
+      margin: auto;
+      margin-top: 30px; }
+    .container4__locations__leftSection__button, .container4__locations__rightSection__button, .container4__locations__middleSection__button {
+      margin: auto;
+      margin-top: 35px;
+      height: 50px;
+      width: 180px; }
+  .container4__locations__leftSection, .container4__locations__rightSection {
+    height: 450px;
     -webkit-box-flex: 2;
     -ms-flex: 2;
-    flex: 2; }
+    flex: 2;
+    margin-top: 160px; }
   .container4__locations__middleSection {
     -webkit-box-flex: 3;
     -ms-flex: 3;
-    flex: 3; }
-  .container4__locations__rightSection {
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2; }
+    flex: 3;
+    position: relative; }
+    .container4__locations__middleSection__picture {
+      width: 100%; }
+    .container4__locations__middleSection__picturetitle {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 330px;
+      margin-left: auto;
+      margin-right: auto;
+      background: yellow;
+      width: 200px; }
 
+/* 
+.container4
+	h1.container4__title Event Calendar
+	p.container4__text container4__text
+	.container4__locations
+		.container4__locations
+			.container4__locations__leftSection
+				p.container4__locations__leftSection__date Aug, 13
+				h1.container4__locations__leftSection__location Switzerland
+				p.container4__locations__leftSection__text container4__locations__leftSection__text
+				button.container4__locations__leftSection__button Book this
+			.container4__locations__middleSection
+				img.container4__locations__middleSection__picture(src='../images/container4__locations__middleSection__picture.png')
+				h2.container4__locations__middleSection__picturetitle Upcoming event
+				p.container4__locations__middleSection__date May, 29
+				h1.container4__locations__middleSection__location Sydney
+				p.container4__locations__middleSection__text container4__locations__leftSection__text
+				button.container4__locations__middleSection__button
+			.container4__locations__rightSection
+				p.container4__locations__rightSection__date Sep, 4
+				h1.container4__locations__rightSection__location New Zealand
+				p.container4__locations__rightSection__text container4__locations__leftSection__text
+				button.container4__locations__rightSection__button Book this
+*/
 .container5__footerbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,8 +380,16 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
-  height: 130px; }
+  height: 130px;
+  font-family: "Open Sans", sans-serif; }
   .container5__footerbar .container5__footerbar__button {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    background: none;
+    border: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif; }

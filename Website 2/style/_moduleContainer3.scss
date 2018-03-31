@@ -1,10 +1,96 @@
 .container3__informations {
-	flex: 3;
-	background: pink;
+	flex: 5;
+	&__informationsContainer {
+		background: white;
+		margin-top: 70px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+		&__topSection, &__middleSection, &__bottomSection {
+			display: flex;
+			flex-direction: line;
+			&__imageContainer {
+				flex: 4;
+				&__image {
+					width: 250px;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 20px;
+				}
+			}
+			&__rightContainer {
+				padding: 10px;
+				flex: 6;
+				text-align: left;
+				&__title {
+				}
+				&__subtitle {
+					display: flex;
+					flex-direction: line;
+				}
+				&__text {
+					margin-top: 20px;
+				}
+				&__button {
+					background: red;
+					border: none;
+					width: 150px;
+					height: 50px;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+
+		}
+	}
 }
 
 .container3__title {
-	flex: 2;
-	background: yellow;
+	flex: 3;
+	text-align: left;
+	padding-top: 100px;
+	color: white;
+	&__groupSize {
+		text-transform: uppercase;
+	}
+	&__bigClimbing {
+		text-transform: uppercase;
+		font-size: 5em;
+	} 
 }
 
+/* 
+.container3
+	.container3__informations
+		.container3__informations__informationsContainer
+			.container3__informations__informationsContainer__topSection
+				.container3__informations__informationsContainer__topSection__imageContainer
+					img.container3__informations__informationsContainer__topSection__imageContainer__image(src='../images/container3__informations__informationsContainer__topSection__imageContainer__image.png')
+				.container3__informations__informationsContainer__topSection__rightContainer
+					h1.container3__informations__informationsContainer__topSection__rightContainer__title Mont Whitney
+					.container3__informations__informationsContainer__topSection__rightContainer__subtitle
+						p.container3__informations__informationsContainer__topSection__rightContainer__subtitle__date 5th July
+						p.container3__informations__informationsContainer__topSection__rightContainer__subtitle__days 8 Days
+							p.container3__informations__informationsContainer__topSection__rightContainer__subtitle__peopleLeft 5 people left
+						p.container3__informations__informationsContainer__topSection__rightContainer__text #{container3__informations__informationsContainer__topSection__rightContainer__text}
+						button.container3__informations__informationsContainer__topSection__rightContainer__button Book This
+			.container3__informations__informationsContainer__middleSection
+				.container3__informations__informationsContainer__middleSection__imageContainer
+					img.container3__informations__informationsContainer__middleSection__imageContainer__image(src='../images/container3__informations__informationsContainer__middleSection__imageContainer__image.png')
+				.container3__informations__informationsContainer__middleSection__rightContainer
+					h1.container3__informations__informationsContainer__middleSection__rightContainer__title Oukaimeden
+					p.container3__informations__informationsContainer__middleSection__rightContainer__text #{container3__informations__informationsContainer__middleSection__rightContainer__text}
+					a.container3__informations__informationsContainer__middleSection__rightContainer__link View this tour
+			.container3__informations__informationsContainer__bottomSection
+				.container3__informations__informationsContainer__bottomSection__imageContainer
+					img.container3__informations__informationsContainer__bottomSection__imageContainer__image(src='../images/container3__informations__informationsContainer__bottomSection__imageContainer__image.png')
+				.container3__informations__informationsContainer__bottomSection__rightContainer
+					h1.container3__informations__informationsContainer__bottomSection__rightContainer__title Alps Mountains
+					p.container3__informations__informationsContainer__bottomSection__rightContainer__text #{container3__informations__informationsContainer__middleSection__rightContainer__text}
+					a.container3__informations__informationsContainer__bottomSection__rightContainer__link View this tour
+	.container3__title
+		h2.container3__title__groupSize
+		img.container3__title__peopleLogo
+		h1.container3__title__bigClimbing Climbing
+*/

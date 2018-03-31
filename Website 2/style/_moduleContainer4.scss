@@ -1,22 +1,83 @@
 .container4__text {
 	width: 500px;
-	padding-top: 30px;
 	margin: auto;
 }
 
 .container4__locations {
 	display: flex;
 	flex-direction: line;
-	background: pink;
-	margin-top: 68px;
-	height: 700px;
-	&__leftSection {
+	margin: auto;
+	margin-top: 95px;
+	height: 770px;
+	width: 1050px;
+	&__leftSection, &__rightSection, &__middleSection {
+		background: white;
+		&__date {
+			margin-top: 30px;
+		}
+		&__location {
+			margin-top: 30px;
+			font-size: 2.2em;
+			text-transform: uppercase;
+		}
+		&__text {
+			width: 80%;
+			margin: auto;
+			margin-top: 30px;
+		}
+		&__button {
+			margin: auto;
+			margin-top: 35px;
+			height: 50px;
+			width: 180px;
+		}
+	}
+	&__leftSection, &__rightSection {
+		height: 450px;
 		flex: 2;
+		margin-top: 160px;
 	}
 	&__middleSection {
 		flex: 3;
-	}
-	&__rightSection {
-		flex: 2;
+		position: relative;
+		&__picture {
+			width: 100%;
+		}
+		&__picturetitle {
+			position: absolute;
+			left: 0; 
+			right: 0; 
+			top: 330px;
+			margin-left: auto;
+			margin-right: auto;
+			background: yellow;
+			width: 200px;
+
+		}
 	}
 }
+
+/* 
+.container4
+	h1.container4__title Event Calendar
+	p.container4__text #{container4__text}
+	.container4__locations
+		.container4__locations
+			.container4__locations__leftSection
+				p.container4__locations__leftSection__date Aug, 13
+				h1.container4__locations__leftSection__location Switzerland
+				p.container4__locations__leftSection__text #{container4__locations__leftSection__text}
+				button.container4__locations__leftSection__button Book this
+			.container4__locations__middleSection
+				img.container4__locations__middleSection__picture(src='../images/container4__locations__middleSection__picture.png')
+				h2.container4__locations__middleSection__picturetitle Upcoming event
+				p.container4__locations__middleSection__date May, 29
+				h1.container4__locations__middleSection__location Sydney
+				p.container4__locations__middleSection__text #{container4__locations__leftSection__text}
+				button.container4__locations__middleSection__button
+			.container4__locations__rightSection
+				p.container4__locations__rightSection__date Sep, 4
+				h1.container4__locations__rightSection__location New Zealand
+				p.container4__locations__rightSection__text #{container4__locations__leftSection__text}
+				button.container4__locations__rightSection__button Book this
+*/
