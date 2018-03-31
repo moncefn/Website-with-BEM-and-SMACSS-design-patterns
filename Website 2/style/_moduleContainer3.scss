@@ -9,6 +9,16 @@
 		&__topSection, &__middleSection, &__bottomSection {
 			display: flex;
 			flex-direction: line;
+			position: 	relative;
+			&__price {
+				position: 	absolute;
+				color: 	white;
+				right: 	0;
+				font-size: 	1.2em;
+				width: 70px;	
+				top: 	50px;
+				border-radius: 	8px 0 0 8px;
+			}
 			&__imageContainer {
 				flex: 4;
 				&__image {
@@ -24,6 +34,9 @@
 				flex: 6;
 				text-align: left;
 				&__title {
+					font-size: 3em;
+					color: 	$darkblue;
+					
 				}
 				&__subtitle {
 					display: flex;
@@ -73,14 +86,26 @@
 		}
 		&__topSection {
 			border-right: 	8px solid $yellow;
+			&__price {
+				background: 	$yellow;
+			}
+			&__rightContainer {
+				padding-top: 	30px;
+			}
 		}
 		&__middleSection {
 			border-right: 	8px solid $blue;
+			&__price {
+				background: 	$blue;
+			}
 		}
 		&__bottomSection {
 			border-right: 	8px solid $green;
 			padding-bottom: 30px;
-			
+			&__price {
+				background: 	$green;
+			}
+
 		}
 	}
 }

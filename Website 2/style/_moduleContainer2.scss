@@ -6,6 +6,8 @@
 		margin-right: 70px;
 		margin-top: 30px;
 		text-align: left;
+		color: 	$darkblue;
+
 	}
 	&__block {
 		margin: auto;
@@ -33,6 +35,11 @@
 		}
 		&__departurediv {
 				background: $green;
+				&__value {
+				color: 	$darkblue;
+
+				}
+
 		}
 		&__difficultydiv {
 				background: $lightgray;
@@ -43,6 +50,10 @@
 		}
 		&__durationdiv {
 				background: $lightgray;
+				&__value {
+					color: 	$darkblue;
+				}
+
 
 		}
 	}

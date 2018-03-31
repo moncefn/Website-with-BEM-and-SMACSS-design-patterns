@@ -4,6 +4,8 @@
 	flex-direction: line;
 	height: 130px;
 	font-family: "Open Sans", sans-serif;
+	position: 	relative;
+	width: 100%;	
 	&__button {
 		flex: 1;
 		background: none;
@@ -13,6 +15,18 @@
 		color: white;
 		font-weight: bold;
 		font-family: "Open Sans", sans-serif;
+	}
+	&__brand {
+		margin-top: 10px;	
+		width: 150px;	
+		position: 	absolute;
+		left: 0; 
+		right: 0; 
+		margin-left: auto;
+		margin-right: auto;
+		&__logo {
+				width: 100%;	
+		}
 	}
 }
 
@@ -45,8 +59,9 @@
 			text-transform: uppercase;
 			font-size: 2.3em;
 		}
-		&__location {
+		&__location {	
 			margin-top: 30px;
+			text-transform: uppercase;
 		}
 		&__text {
 			margin-top: 10px;
@@ -58,6 +73,7 @@
 			width: 80%;
 			margin: auto;
 			margin-top: 60px;
+			position: 	relative;
 			&__difficulty, &__departure {
 				flex: 1;
 				&__title {
@@ -65,19 +81,34 @@
 
 				}
 			}
+			&__circle {
+				height: 10px;	
+				width: 10px;	
+				background: 	$darkred;
+				border-radius: 50%;
+				position: absolute;
+				left: 0; 
+				right: 0; 
+				top: 	20px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 	&__leftSection {
+		border-bottom: 8px solid $blue;
 		&__title {
 			color: 	$blue;
 		}
 	}
 	&__middleSection {
+		border-bottom: 8px solid $red;
 		&__title {
 			color: 	$red;
 		}
 	}
 	&__rightSection {
+		border-bottom: 8px solid $green;
 		&__title {
 			color: 	$green;
 		}
