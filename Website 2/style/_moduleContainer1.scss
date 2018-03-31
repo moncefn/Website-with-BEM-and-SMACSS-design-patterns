@@ -1,10 +1,18 @@
 .container1__navbar {
-	background: yellow;
+	background: none;
 	display: flex;
 	flex-direction: line;
 	height: 130px;
+	font-family: "Open Sans", sans-serif;
 	&__button {
 		flex: 1;
+		background: none;
+		border: none;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		color: white;
+		font-weight: bold;
+		font-family: "Open Sans", sans-serif;
 	}
 }
 
@@ -20,6 +28,7 @@
 	margin-right: auto;
 	width: 1030px;
 	height: 800px;
+	font-family: "Open Sans", sans-serif;
 	&__leftSection, &__rightSection {
 		flex: 1;
 	}

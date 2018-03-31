@@ -1,8 +1,15 @@
+.container4__text {
+	width: 500px;
+	padding-top: 30px;
+	margin: auto;
+}
+
 .container4__locations {
 	display: flex;
 	flex-direction: line;
 	background: pink;
-	padding-top: 100px;
+	margin-top: 68px;
+	height: 700px;
 	&__leftSection {
 		flex: 2;
 	}

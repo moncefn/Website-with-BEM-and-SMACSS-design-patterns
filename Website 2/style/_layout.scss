@@ -9,6 +9,8 @@
 	display: flex;
 	flex-direction: line;
 	height: 1420px;
+	padding-top: 650px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .container3 {
@@ -16,14 +18,19 @@
 	display: flex;
 	flex-direction: line;
 	height: 1120px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .container4 {
 	background: red;
 	height: 1300px;
+	padding-top: 90px;
+	font-family: "Open Sans", sans-serif;
 }
 
 .container5 {
 	background: green;
 	height: 130px;
+	position: relative;
+	font-family: "Open Sans", sans-serif;
 }
