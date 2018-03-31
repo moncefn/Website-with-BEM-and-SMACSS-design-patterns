@@ -28,6 +28,7 @@
 			&__value {
 				font-size: 24px;
 				text-transform: uppercase;
+				margin-top: 7px;	
 			}
 		}
 		&__departurediv {
@@ -54,19 +55,36 @@
 	&__booker {
 		margin-top: 80px;
 		margin-left: 100px;
+		height: 60px;
+		width: 350px;	
 		display: flex;
 		flex-direction: line;
-		height: 70px;
 		&__price {
 			font-size: 2.5em;
 			width: 150px;
 			padding-top: auto;
+			background: $pink;
+			color: 	white;
+			border-radius: 	10px 0 0 10px;
 		}
 		&__bookButton {
-			background: red;
+			background: $red;
 			border: none;
 			width: 150px;
-			
+			margin-left: 0px;
+			display: flex;
+			flex-direction: line;	
+			border-radius: 	0 10px 10px 0;
+			&__logo {
+				width: 30px;	
+			}
+			&__text {
+				margin-top: 3px;	
+				margin-left: 10px;	
+				font-size: 18px;
+				color: white;
+
+			}
 		}
 	}
 }
