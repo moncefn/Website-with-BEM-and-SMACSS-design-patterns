@@ -76,3 +76,13 @@ body {
     -webkit-box-flex: 3;
     -ms-flex: 3;
     flex: 3; }
+
+.container2__header {
+  height: 45px;
+  background: yellow; }
+
+.container2__imageContainer {
+  margin: auto;
+  background: green;
+  width: 95%;
+  height: 90%; }

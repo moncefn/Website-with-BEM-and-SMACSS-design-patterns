@@ -1,0 +1,12 @@
+.container2 {
+	&__header {
+		height: 45px;
+		background: yellow;
+	}
+	&__imageContainer {
+		margin: auto;
+		background: green;
+		width: 95%;
+		height: 90%;
+	}
+}
