@@ -9,27 +9,27 @@ body {
 	background-image: url(../images/webdesign.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 2300px;
 	color: 	white;
+	background: black;
+	.thinner {
+		width: 940px;
+		margin: auto;
+	}
 	h1 {
 		font-size: 4em;
 	}
 	h2 {
 		font-size: 1.1em;
 	}
+	h3 {
+		font-size: 0.8em;
+		
+	}
 	button {
 		border: none;
 		color: 	white;
 		h2 {
 			font-size:  1.2em;
-		}
-	}
-	.underbody {
-		background: black;
-		opacity: 1;
-		.thinner {
-			width: 940px;
-			margin: auto;
 		}
 	}
 }

@@ -60,7 +60,17 @@
 				flex: 1;	
 					&__images {
 						display: flex;
-						flex-direction: line;	
+						flex-direction: line;
+						&__leftcontainer	 {
+								flex: 1;	
+								display: flex;
+								flex-direction: line;	
+							}	
+						&__rightcontainer	 {
+							flex: 1;	
+							display: flex;
+							flex-direction: line;	
+						}
 					}
 			}
 			&__right {
