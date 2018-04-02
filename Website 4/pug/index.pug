@@ -1,0 +1,19 @@
+include ../bemto/bemto.pug
+- set_bemto_settings({ flat_elements: false })
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title myWebsite
+		link(rel="stylesheet", href="../style/style.css")
+		script(src="https://code.jquery.com/jquery-3.3.1.js")
+	body
+		.underbody
+			include ./parts/1-Navbar.pug
+			.thinner
+				include ./parts/2-Container2.pug
+				include ./parts/3-Container3.pug
+				include ./parts/4-Container4.pug
+				include ./parts/5-Container5.pug
+				include ./parts/6-Footer.pug
+			script(src="../app/app.js")

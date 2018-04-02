@@ -1,0 +1,39 @@
+// +b.navbarContainer
+// 		+b.__logoContainer
+// 			+e.__logo
+// 		+e.__button
+// 		+e.__button
+// 		+e.__button
+// 		+b.__schedule
+// 		+b.__searchcontainer
+
+// 		
+
+
+.navbarContainer {
+	&__navbarMiddle {
+		height: 100%;
+		width: 940px;
+		margin: auto;
+		display: flex;
+		background: yellow;
+		flex-direction: line;
+		&__logoContainer {
+			background: blue;
+			flex: 1;
+		}
+		&__button {
+			background: green;
+			border: 1px solid black;
+			flex: 1;
+		}
+		&__schedule {
+			background: blue;
+			flex: 1;
+		}
+		&__searchcontainer {
+			background-color: gray;
+			flex: 3;
+		}
+	}
+}

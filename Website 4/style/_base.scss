@@ -1,0 +1,23 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/webdesign.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 2300px;
+	.underbody {
+		background: white;
+		opacity: 0.5;
+		.thinner {
+			width: 940px;
+			margin: auto;
+		}
+	}
+}
+
+
+

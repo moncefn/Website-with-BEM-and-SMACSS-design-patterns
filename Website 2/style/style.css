@@ -124,8 +124,8 @@ h1 {
     height: 630px;
     margin-top: 50px; }
   .container1__activities__leftSection, .container1__activities__middleSection, .container1__activities__rightSection {
-    -webkit-box-shadow: 0px 30px 30px #525252;
-    box-shadow: 0px 30px 30px #525252;
+    -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -210,8 +210,8 @@ h1 {
     -ms-flex-direction: line;
     flex-direction: line;
     text-align: center;
-    -webkit-box-shadow: 0px 30px 30px #525252;
-    box-shadow: 0px 30px 30px #525252; }
+    -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3); }
     .container2__informations__block__departurediv, .container2__informations__block__difficultydiv, .container2__informations__block__ratingdiv, .container2__informations__block__durationdiv {
       -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -287,8 +287,8 @@ h1 {
   -ms-flex: 3;
   flex: 3; }
   .container2__pictureContainer__picture {
-    -webkit-box-shadow: 0px 30px 30px #525252;
-    box-shadow: 0px 30px 30px #525252;
+    -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
     display: block;
     width: 400px;
     margin-top: 50px;
@@ -301,8 +301,8 @@ h1 {
   -ms-flex: 5;
   flex: 5; }
   .container3__informations__informationsContainer {
-    -webkit-box-shadow: 0px 30px 30px #525252;
-    box-shadow: 0px 30px 30px #525252;
+    -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
     background: white;
     margin-top: 70px;
     margin-left: 30px;
@@ -560,8 +560,8 @@ h1 {
   height: 130px;
   font-family: "Open Sans", sans-serif;
   background: white;
-  -webkit-box-shadow: 0px 30px 30px #525252;
-  box-shadow: 0px 30px 30px #525252; }
+  -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3); }
   .container5__footerbar__button {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -582,7 +582,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     background: #57c149;
-    -webkit-box-shadow: 0px 30px 30px #525252;
-    box-shadow: 0px 30px 30px #525252; }
+    -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3); }
     .container5__footerbar__brand__logo {
       width: 100%; }
