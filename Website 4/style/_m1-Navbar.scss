@@ -39,37 +39,37 @@
 		width: 940px;
 		margin: auto;
 		display: flex;
-		background: yellow;
 		flex-direction: line;
 		&__logoContainer {
-			background: blue;
 			flex: 1;
 			display: inline-block;
 			height: 100%;	
-			vertical-align: middle;
+			display: flex;
+			flex-direction: line;	
+			align-items: center;
+
 			&__logo {
-				display: 	block;	
 				margin-right: auto;	
 				margin-left: auto;
-				vertical-align: middle;
 			}
 		}
 		&__button {
-			background: green;
-			border: 1px solid black;
+			background: 	none;
 			flex: 1;
 		}
 		&__schedule {
-			background: blue;
 			flex: 1;
 				text-align: center;	
+				display: flex;
+				flex-direction: column;	
+				align-items: center;
 			&__title {
 			}
 			&__rebours {
 				display: flex;
 				flex-direction: line;	
 				&__numberdiv {
-					background: gray;
+					background: $transblack;
 					&__number{
 
 					}
@@ -80,8 +80,11 @@
 			}
 		}
 		&__searchcontainer {
-			background-color: gray;
+			display: flex;
+			flex-direction: line;	
+			align-items: center;
 			flex: 3;
+			margin: auto;
 		}
 	}
 }

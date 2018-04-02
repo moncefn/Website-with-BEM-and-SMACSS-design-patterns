@@ -1,31 +1,31 @@
 .container2 {
+
+	background: $color2;
 	&__header {
 		height: 45px;
-		background: yellow;
+		background: $color2;
 		display: flex;
 		flex-direction: line;	
+		align-items: center;
+		padding-left: 	20px;
+		padding-right: 	20px;
 		&__titleLeft {
 			flex: 1;	
-			background: green;
-			border: 1px solid red;
 		}
 		&__titleRight {
 			flex: 3;	
-			background: green;
-			border: 1px solid red;
 		}
 		&__buttonmiddle {
+			background: 	none;
 			flex: 2;	
-			background: blue;
 		}
 		&__buttonright {
+			background: 	none;
 			flex: 1;	
-			background: red;
 		}
 	}
 	&__imageContainer {
 		margin: auto;
-		background: green;
 		width: 95%;
 		height: 90%;
 		&__image {

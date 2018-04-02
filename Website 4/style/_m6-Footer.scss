@@ -1,7 +1,12 @@
 .footer {
+	display: flex;
+	flex-direction: column;	
+	background: 	rgb(0,0, 30);
 	&__header {
+		flex: 1;	
 		display: flex;
 		flex-direction: line;	
+		background: 	$color2;
 		&__button {
 			flex: 1;	
 		}
@@ -10,6 +15,42 @@
 		}
 	}
 		&__bigContainer {
+			flex: 5;	
+			display: flex;
+			flex-direction: line;	
+			&__div1 {
+				flex: 1;	
+				display: flex;
+				flex-direction: column;	
+
+			}
+			&__div2 {
+				flex: 1;	
+				display: flex;
+				flex-direction: column;	
+				
+			}
+			&__div3 {
+				flex: 1;	
+				display: flex;
+				flex-direction: column;	
+				
+			}
+			&__div4 {
+				flex: 1;	
+				display: flex;
+				flex-direction: column;	
+				
+			}
+			&__div5 {
+				flex: 1;	
+				display: flex;
+				flex-direction: column;	
+				
+			}
+		}
+		&__footer1 {
+			flex: 1;	
 			display: flex;
 			flex-direction: line;	
 			&__div1 {
@@ -33,11 +74,8 @@
 				
 			}
 		}
-		&__footer1 {
-			display: flex;
-			flex-direction: line;	
-		}
 		&__footer2 {
+			flex: 1;	
 			display: flex;
 			flex-direction: line;	
 		}

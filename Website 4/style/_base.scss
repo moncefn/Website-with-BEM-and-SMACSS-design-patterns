@@ -5,12 +5,27 @@
 }
 
 body {
+	font-family: arial;
 	background-image: url(../images/webdesign.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 2300px;
+	color: 	white;
+	h1 {
+		font-size: 4em;
+	}
+	h2 {
+		font-size: 1.1em;
+	}
+	button {
+		border: none;
+		color: 	white;
+		h2 {
+			font-size:  1.2em;
+		}
+	}
 	.underbody {
-		background: white;
+		background: black;
 		opacity: 1;
 		.thinner {
 			width: 940px;
@@ -21,3 +36,6 @@ body {
 
 
 
+$color: #c00f1e;
+$color2: #282b2d;
+$transblack: rgba(0, 0, 0, 0.4);
