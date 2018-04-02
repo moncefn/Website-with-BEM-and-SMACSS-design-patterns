@@ -1,0 +1,74 @@
+.container4 {
+		display: flex;
+		flex-direction: line;	
+		&__left {
+			flex: 1;
+			&__table {
+				display: flex;
+				flex-direction: line;	
+			}	
+		}
+		&__middle {
+			flex: 1;	
+			&__top {
+				&__images {
+					display: flex;
+					flex-direction: line;	
+				}
+			}			
+		}
+		&__right {
+			flex: 1;	
+		}
+}
+
+/* 
++b.container4
+	+b.__left
+		+b.__header
+			+e.H1.__title Tickets
+		+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiit
+		+b.__table
+			+b.__leftdiv
+				+e.__title Date
+				+e.P.__topelement Thursday, July 15
+				+e.P.__middleelement Thursday, July 15
+				+e.P.__bottomelement Thursday, July 15
+			+b.__middlediv
+				+e.__title Availability
+				+e.P.__topelement Muay Thai
+				+e.P.__middleelement Muay Thai
+				+e.P.__bottomelement Muay Thai
+			+b.__rightdiv
+				+e.__title Time
+				+e.P.__topelement 10AM
+				+e.P.__middleelement 10AM
+				+e.P.__bottomelement 10AM
+		+e.BUTTON.__button Buy Tickets
+	+b.__middle
+		+b.__top
+			+b.__header
+				+e.H1.__title How to watch
+			+b.__images
+				+b.__leftcontainer
+					+e.IMG.__logo(src='../images/mouselogo.png')
+					+e.P.__title Online & Mobile
+				+b.__rightcontainer
+					+e.IMG.__logo(src='../images/screenlogo.png')
+					+e.P.__title Cable & Satellite
+			+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiit
+			+e.BUTTON__button More information
+		+b.__bottom
+			+e.P.__title big shiiiiiiiiiiiiiiiiiiiiiiit
+	+b.right
+		+b.__header
+			+e.H1.__title
+		+b.UL.__list
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+		+e.BUTTON.__button More
+		*/

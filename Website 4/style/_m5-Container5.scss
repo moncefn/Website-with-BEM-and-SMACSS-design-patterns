@@ -1,0 +1,32 @@
+.container5 {
+	&__matchesContainer {
+		display: flex;
+		flex-direction: line;	
+		&__matchdiv {
+			flex: 1;
+		}
+	}
+}
+
+
+/* 
++b.container5
+	+e.H1.__title MORE ON MUAY THAI
+	+b.__matchesContainer
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+			*/

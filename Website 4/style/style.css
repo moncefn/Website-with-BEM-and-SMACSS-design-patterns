@@ -43,6 +43,39 @@ body {
   background: red;
   height: 420px; }
 
+/*
++b.navbarContainer
+	+b.__navbarMiddle
+		+b.__logoContainer
+			+e.IMG__logo(src='../images/ufc.png') 
+		+e.BUTTON__button
+			+e.H2.__title schedule
+			+e.IMG__arrow(src='../images/arrow.png')
+		+e.BUTTON__button 
+			+e.H2.__title fighters
+			+e.IMG__arrow(src='../images/arrow.png')
+		+e.BUTTON__button
+			+e.H2.__title media
+			+e.IMG__arrow(src='../images/arrow.png')
+		+b.__schedule
+			+e.__title Muay Thai
+			+b.__rebours
+				+b.__numberdiv 
+					+e.__number 18
+					+e.__title Days
+				+b.__numberdiv 
+					+e.__number 14
+					+e.__title Hrs
+				+b.__numberdiv 
+					+e.__number 45
+					+e.__title Mins
+				+b.__numberdiv 
+					+e.__number 56
+					+e.__title Secs
+		+b.__searchcontainer
+			+e.INPUT.__search 
+			+e.INPUT.__button Go
+*/
 .navbarContainer__navbarMiddle {
   height: 100%;
   width: 940px;
@@ -59,7 +92,15 @@ body {
     background: blue;
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+    .navbarContainer__navbarMiddle__logoContainer__logo {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      vertical-align: middle; }
   .navbarContainer__navbarMiddle__button {
     background: green;
     border: 1px solid black;
@@ -70,7 +111,18 @@ body {
     background: blue;
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    text-align: center; }
+    .navbarContainer__navbarMiddle__schedule__rebours {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: line;
+      flex-direction: line; }
+      .navbarContainer__navbarMiddle__schedule__rebours__numberdiv {
+        background: gray; }
   .navbarContainer__navbarMiddle__searchcontainer {
     background-color: gray;
     -webkit-box-flex: 3;
@@ -79,10 +131,428 @@ body {
 
 .container2__header {
   height: 45px;
-  background: yellow; }
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
+  .container2__header__titleLeft {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: green;
+    border: 1px solid red; }
+  .container2__header__titleRight {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background: green;
+    border: 1px solid red; }
+  .container2__header__buttonmiddle {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    background: blue; }
+  .container2__header__buttonright {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: red; }
 
 .container2__imageContainer {
   margin: auto;
   background: green;
   width: 95%;
   height: 90%; }
+  .container2__imageContainer__image {
+    width: 100%;
+    height: 100%; }
+
+/*
++b.container2
+	+b.__header
+		+e.H2__titleLeft Muay Thai 
+		+e.H2__titleRight Edgar vs Monk
+		+e.BUTTON__buttonmiddle But tickets
+		+e.BUTTON__buttonright Overview
+		+e.BUTTON__buttonright Videos
+		+e.BUTTON__buttonright Fight Card
+		+e.BUTTON__buttonright Chatter
+	+b.__imageContainer
+		+e.IMG__image(src='../images/bigimage.png')
+*/
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: row; }
+  .container3__topleft {
+    grid-column: 1;
+    grid-row: 1; }
+  .container3__topright {
+    grid-column: 2;
+    grid-row: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: line;
+    flex-direction: line; }
+    .container3__topright__left__rebours {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: line;
+      flex-direction: line; }
+  .container3__bottom {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background: red; }
+    .container3__bottom__commentsdiv {
+      background: yellow;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: line;
+      flex-direction: line; }
+      .container3__bottom__commentsdiv__commentdiv {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: green;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .container3__bottom__commentsdiv__commentdiv__persondiv {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: line;
+          flex-direction: line; }
+
+/*
++b.container3
+	+b.__topleft
+		+e.H2.__surtitle MUAY THAI 452
+		+e.H1.__title EDGAR VS MONK
+		+e.H3.__subtitle Bangkok, Thailand
+	+b.__topright
+		+b.__left
+			+e.H2.__surtitle PM
+			+e.H1.__title SATURDAY AUG 
+			+b.__rebours
+				+b.__numberdiv 
+					+e.__number 18
+					+e.__title Days
+				+b.__numberdiv 
+					+e.__number 14
+					+e.__title Hrs
+				+b.__numberdiv 
+					+e.__number 45
+					+e.__title Mins
+				+b.__numberdiv 
+					+e.__number 56
+					+e.__title Secs
+		+b.__right
+			+e.IMG.__logo(src='../images/logocontainer3.png')
+	+b.__bottom
+		+e.__title Event Chatter
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+				*/
+.container4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
+  .container4__left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .container4__left__table {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: line;
+      flex-direction: line; }
+  .container4__middle {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .container4__middle__top__images {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: line;
+      flex-direction: line; }
+  .container4__right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+/* 
++b.container4
+	+b.__left
+		+b.__header
+			+e.H1.__title Tickets
+		+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiit
+		+b.__table
+			+b.__leftdiv
+				+e.__title Date
+				+e.P.__topelement Thursday, July 15
+				+e.P.__middleelement Thursday, July 15
+				+e.P.__bottomelement Thursday, July 15
+			+b.__middlediv
+				+e.__title Availability
+				+e.P.__topelement Muay Thai
+				+e.P.__middleelement Muay Thai
+				+e.P.__bottomelement Muay Thai
+			+b.__rightdiv
+				+e.__title Time
+				+e.P.__topelement 10AM
+				+e.P.__middleelement 10AM
+				+e.P.__bottomelement 10AM
+		+e.BUTTON.__button Buy Tickets
+	+b.__middle
+		+b.__top
+			+b.__header
+				+e.H1.__title How to watch
+			+b.__images
+				+b.__leftcontainer
+					+e.IMG.__logo(src='../images/mouselogo.png')
+					+e.P.__title Online & Mobile
+				+b.__rightcontainer
+					+e.IMG.__logo(src='../images/screenlogo.png')
+					+e.P.__title Cable & Satellite
+			+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiit
+			+e.BUTTON__button More information
+		+b.__bottom
+			+e.P.__title big shiiiiiiiiiiiiiiiiiiiiiiit
+	+b.right
+		+b.__header
+			+e.H1.__title
+		+b.UL.__list
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+			+e.LI.__element Some event News
+		+e.BUTTON.__button More
+		*/
+.container5__matchesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
+  .container5__matchesContainer__matchdiv {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+/* 
++b.container5
+	+e.H1.__title MORE ON MUAY THAI
+	+b.__matchesContainer
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+		+b.__matchdiv
+			+e.H2.__title MUAY THAI 117
+			+e.IMG.__picture(src='../images/matchdiv.png')
+			+e.P.__date Satm Aug 07 2010
+			*/
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
+  .footer__header__button {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .footer__header__country {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+.footer__bigContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
+  .footer__bigContainer__div1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .footer__bigContainer__div2 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .footer__bigContainer__div3 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .footer__bigContainer__div4 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .footer__bigContainer__div5 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+.footer__footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
+
+.footer__footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: line;
+  flex-direction: line; }
+
+/*
++b.footer
+	+b.__header
+		+e.BUTTON__button Home
+		+e.BUTTON__button Events
+		+e.BUTTON__button Muay Thai Fight Night
+		+e.P__country Krabi, Thailand
+	+b.__bigContainer
+		+b.__div1
+			+e.H2.__title Schedule
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.H2.__title Schedule
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+		+b.__div2
+			+e.H2.__title Schedule
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.H2.__title Schedule
+			+e.H2.__title Schedule
+			+e.H2.__title Schedule
+		+b.__div3
+			+e.H2.__title Schedule
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+		+b.__div4
+			+e.H2.__title Schedule
+			+e.INPUT.__input
+			+e.H2.__title Schedule
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+			+e.A.__link Link
+		+b.__div5
+			+e.H2.__title Schedule
+			+e.H2.__title Schedule
+			+e.IMG.__image(src='../images/matchdiv.png')
+			+e.BUTTON.__button Buy tickets
+	+b.__footer1
+		+b.__div1
+			+e.A.__link Link
+			+e.A.__link Link
+		+b.__div2
+			+e.A.__link Link
+			+e.A.__link Link
+		+b.__div3
+			+e.A.__link Link
+			+e.A.__link Link
+		+b.__div4
+			+e.H2.__title Schedule
+			+e.BUTTON.__button
+		+b.__div5
+			+e.H2.__title Schedule
+			+e.INPUT.__title
+	+b.__footer2
+		+b.__buttons
+			+e.BUTTON.__button
+				+e.IMG.__img(src='../images/footerbutton.png')
+			+e.BUTTON.__button
+				+e.IMG.__img(src='../images/footerbutton.png')
+			+e.BUTTON.__button
+				+e.IMG.__img(src='../images/footerbutton.png')
+			+e.BUTTON.__button
+				+e.IMG.__img(src='../images/footerbutton.png')
+		+e.P.__copyright
+*/

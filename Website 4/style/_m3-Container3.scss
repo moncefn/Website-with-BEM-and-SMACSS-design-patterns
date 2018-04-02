@@ -1,0 +1,97 @@
+.container3 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-auto-flow: row;
+		&__topleft {
+			grid-column: 1 ;
+			grid-row: 1;	
+		}	
+		&__topright {
+			grid-column: 2 ;
+			grid-row: 1;
+			display: flex;
+			flex-direction: line;
+			&__left {
+				&__rebours {
+					display: flex;
+					flex-direction: line;
+				}
+			}
+		}
+		&__bottom {
+			grid-column: 1 / 3 ;
+			grid-row: 2;
+			background: 	red;
+			&__commentsdiv {
+				background: 	yellow;
+				display: flex;
+				flex-direction: line;
+				&__commentdiv {
+					flex: 1;
+					background: 	green;
+					display: flex;
+					flex-direction: column;		
+					&__persondiv {
+						display: flex;
+						flex-direction: line;	
+					}			
+				}
+
+
+			}
+		}
+}
+
+/*
++b.container3
+	+b.__topleft
+		+e.H2.__surtitle MUAY THAI 452
+		+e.H1.__title EDGAR VS MONK
+		+e.H3.__subtitle Bangkok, Thailand
+	+b.__topright
+		+b.__left
+			+e.H2.__surtitle PM
+			+e.H1.__title SATURDAY AUG 
+			+b.__rebours
+				+b.__numberdiv 
+					+e.__number 18
+					+e.__title Days
+				+b.__numberdiv 
+					+e.__number 14
+					+e.__title Hrs
+				+b.__numberdiv 
+					+e.__number 45
+					+e.__title Mins
+				+b.__numberdiv 
+					+e.__number 56
+					+e.__title Secs
+		+b.__right
+			+e.IMG.__logo(src='../images/logocontainer3.png')
+	+b.__bottom
+		+e.__title Event Chatter
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+		+b.__commentsdiv
+			+b.__commentdiv
+				+e.P.__text big shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
+			+b.__persondiv
+				+e.IMG.__picture(src='../images/personlogo.png')
+				+e.P.__name Michael Jackson
+				*/
