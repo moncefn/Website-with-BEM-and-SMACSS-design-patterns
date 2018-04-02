@@ -1,9 +1,31 @@
 +b.navbarContainer
 	+b.__navbarMiddle
 		+b.__logoContainer
-			+e.__logo
-		+e.__button
-		+e.__button
-		+e.__button
+			+e.IMG__logo(src='../images/ufc.png') 
+		+e.BUTTON__button
+			+e.H2.__title schedule
+			+e.IMG__arrow(src='../images/arrow.png')
+		+e.BUTTON__button 
+			+e.H2.__title fighters
+			+e.IMG__arrow(src='../images/arrow.png')
+		+e.BUTTON__button
+			+e.H2.__title media
+			+e.IMG__arrow(src='../images/arrow.png')
 		+b.__schedule
+			+e.__title Muay Thai
+			+b.__rebours
+				+b.__numberdiv 
+					+e.__number 18
+					+e.__title Days
+				+b.__numberdiv 
+					+e.__number 14
+					+e.__title Hrs
+				+b.__numberdiv 
+					+e.__number 45
+					+e.__title Mins
+				+b.__numberdiv 
+					+e.__number 56
+					+e.__title Secs
 		+b.__searchcontainer
+			+e.INPUT.__search 
+			+e.INPUT.__button Go
