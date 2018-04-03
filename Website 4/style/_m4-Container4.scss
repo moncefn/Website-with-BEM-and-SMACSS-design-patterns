@@ -24,6 +24,12 @@
 			flex-direction: line;
 
 			padding-top: 20px;	
+			&__left, &__middle, &__right	 {
+				padding-left: 10px;	
+				padding-right: 10px;	
+
+				
+			}
 			&__left {
 						text-align: 	justify;
 					margin-left: 10px;	
@@ -73,39 +79,48 @@
 						text-align: 	justify;
 				flex: 1;	
 					&__images {
+						width: 100%;
 						display: flex;
 						flex-direction: line;
-						&__leftcontainer	 {
+						&__leftcontainer, &__rightcontainer	 {
 								flex: 1;	
 								display: flex;
 								flex-direction: line;	
-							}	
-						&__rightcontainer	 {
-							flex: 1;	
-							display: flex;
-							flex-direction: line;	
-						}
+								&__logo {
+									width: 25px;
+								}
+								&__title {
+									display: flex;
+									flex-direction: line;
+									align-items: center;
+								}
+							}
 					}
+						&__text	 {
+								margin-top: 20px;	
+							}	
+
 			}
 			&__right {
 					margin-right: 10px;	
 				border-left: 1px solid $color3;
 				flex: 1;	
 				&__list	 {
-					&__element	 {
 						list-style-type: none;
 						font-size: 12px;
 						text-align: 	justify;
+						margin-top: 15px;
+					}
+					&__button {
+						background: $color2;
+						padding: 5px;
+						padding-left: 30px;		
+						padding-right: 30px;		
 					}
 				}
 			}
-			&__left, &__middle, &__right	 {
-				padding-left: 10px;	
-				padding-right: 10px;	
 
-				
-			}
-	}
+	
 }
 
 /* 

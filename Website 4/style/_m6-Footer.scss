@@ -25,15 +25,16 @@
 
 	}
 		&__bigContainer {
-		padding: 20px;
-			margin-top: 20px;
+			margin-top: 10px;
 			flex: 5;	
 			display: flex;
 			flex-direction: line;	
+			font-size: 12px;
 			&__div {
 				flex: 1;	
 				display: flex;
 				flex-direction: column;	
+				padding: 10px;
 				&__link {
 					margin-top: 5px;
 					color: $color3;
@@ -45,22 +46,57 @@
 				&__image {
 					
 				}
+				&__button{
+					background: $color;
+					padding: 7px;	
+					display: flex;
+					flex-direction: line;	
+					align-items: center;
+					justify-content: space-around;
+					width: 150px;	
+					margin-top: 20px;	
+				}
+				&__title	 {
+				}
+					&__arrow {
+						height: 12px;	
+						margin-left: 10px;	
+					}
 			}
 
 		}
 		&__footer1 {
+
 			flex: 1;	
 			display: flex;
 			flex-direction: line;	
+			font-size: 12px;
+
+
 			&__div {
+				padding: 10px;
+
 				flex: 1;
+				display: flex;
+				flex-direction: column;
+				&__link {
+					color: $color3;
+					flex: 1;
+
+				}
 				}	
 		}
 		&__footer2 {
 			flex: 1;	
-			display: flex;
-			flex-direction: line;	
 			padding: 10px;
+			background: $color2;
+			color: $color3;
+			font-size: 12px;
+			
+			&__copyrightdiv {
+				text-align: right;
+				float: right;
+			}
 		}
 }
 

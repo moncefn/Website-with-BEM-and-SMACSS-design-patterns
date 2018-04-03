@@ -9,6 +9,8 @@
 		&__topleft {
 			grid-column: 1 ;
 			grid-row: 1;	
+			border-right: 1px solid $color2;
+		    box-shadow: 1px 0 0px black;
 			&__surtitle	 {
 				color: 	$color;
 			}
@@ -21,12 +23,12 @@
 			grid-row: 1;
 			display: flex;
 			flex-direction: line;
-			border-left: 1px solid $color2;
 			&__left {
 				flex: 4;
 				display: flex;
 				flex-direction: column;	
 				padding-bottom: 50px;	
+				margin-left: 10px;
 				&__surtitle	 {
 					color: 	$color;
 				}

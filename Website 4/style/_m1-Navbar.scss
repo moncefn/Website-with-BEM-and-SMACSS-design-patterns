@@ -34,13 +34,13 @@
 
 
 .navbarContainer {
-	    box-shadow: 0 15px 0 black;
 	&__navbarMiddle {
 		height: 100%;
 		width: 940px;
 		margin: auto;
 		display: flex;
 		flex-direction: line;
+		width: 70%;
 
 		&__logoContainer {
 			flex: 1;
