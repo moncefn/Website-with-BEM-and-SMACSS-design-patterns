@@ -89,13 +89,13 @@
 		&__footer2 {
 			flex: 1;	
 			padding: 10px;
-			background: $color2;
-			color: $color3;
-			font-size: 12px;
-			
+			color: $color2;
+			font-size: 14px;
+			background: linear-gradient(to bottom, $color2, black);
 			&__copyrightdiv {
 				text-align: right;
 				float: right;
+				text-shadow: 1px 1px $color3;
 			}
 		}
 }
