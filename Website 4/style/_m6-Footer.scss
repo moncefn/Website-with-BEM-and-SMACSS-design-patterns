@@ -4,80 +4,63 @@
 	background: 	rgb(0,0, 30);
 	&__header {
 		flex: 1;	
-		display: flex;
-		flex-direction: line;	
 		background: 	$color2;
-		&__button {
-			flex: 1;	
+		padding: 10px;
+		&__buttons {
+			float: left;	
+			display: flex;
+			flex-direction: line;
+			&__button {
+				margin-left: 10px;
+				background: none;
+			}
 		}
-		&__country {
+		&__countrydiv {
+			float: right;	
 			flex: 1;	
+			margin-right: 20px;
+			&__country {
+			}
 		}
+
 	}
 		&__bigContainer {
+		padding: 20px;
+			margin-top: 20px;
 			flex: 5;	
 			display: flex;
 			flex-direction: line;	
-			&__div1 {
+			&__div {
 				flex: 1;	
 				display: flex;
 				flex-direction: column;	
+				&__link {
+					margin-top: 5px;
+					color: $color3;
+				}
+				&__title {
+					margin-top: 5px;
 
+				}
+				&__image {
+					
+				}
 			}
-			&__div2 {
-				flex: 1;	
-				display: flex;
-				flex-direction: column;	
-				
-			}
-			&__div3 {
-				flex: 1;	
-				display: flex;
-				flex-direction: column;	
-				
-			}
-			&__div4 {
-				flex: 1;	
-				display: flex;
-				flex-direction: column;	
-				
-			}
-			&__div5 {
-				flex: 1;	
-				display: flex;
-				flex-direction: column;	
-				
-			}
+
 		}
 		&__footer1 {
 			flex: 1;	
 			display: flex;
 			flex-direction: line;	
-			&__div1 {
-				flex: 1;	
-
-			}
-			&__div2 {
-				flex: 1;	
-				
-			}
-			&__div3 {
-				flex: 1;	
-				
-			}
-			&__div4 {
-				flex: 1;	
-				
-			}
-			&__div5 {
-				flex: 1;	
-				
-			}
+			&__div {
+				flex: 1;
+				}	
 		}
 		&__footer2 {
 			flex: 1;	
 			display: flex;
 			flex-direction: line;	
+			padding: 10px;
 		}
 }
 

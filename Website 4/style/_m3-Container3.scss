@@ -4,6 +4,7 @@
 		grid-template-rows: repeat(2, 1fr);
 		grid-auto-flow: row;
 		background: $color2;
+		background: linear-gradient(to bottom, $color2, black);
 		padding: 20px;	
 		&__topleft {
 			grid-column: 1 ;
@@ -12,7 +13,7 @@
 				color: 	$color;
 			}
 			&__subtitle	 {
-				color: 	gray;
+				color: 	$color3;
 			}
 		}	
 		&__topright {
@@ -21,14 +22,31 @@
 			display: flex;
 			flex-direction: line;
 			&__left {
+				flex: 1;
+				display: flex;
+				flex-direction: column;	
+				justify-content: space-around;
+				padding-bottom: 50px;	
 				&__surtitle	 {
 					color: 	$color;
 				}
 				&__rebours {
-					background: $transblack;
 					text-align: center;	
 					display: flex;
 					flex-direction: line;
+					&__numberdiv	 {
+						background: $transblack;
+						margin: 2px;
+					}
+				}
+			}
+			&__right {
+				flex: 1;
+				display: flex;
+				flex-direction: line;
+				align-items: center;
+				&__logo {
+					width: 100%;
 				}
 			}
 		}
@@ -36,6 +54,9 @@
 			margin-top: 50px;	
 			grid-column: 1 / 3 ;
 			grid-row: 2;
+			&__title {
+				color: 	$color;
+			}
 			&__commentsdiv {
 				display: flex;
 				flex-direction: line;
@@ -45,10 +66,11 @@
 					flex-direction: column;	
 					padding: 10px;	
 					&__textdiv {
-						background: gray;
+						background: $color2;
+						color: 	$color3;
+						padding: 10px;	
 						&__text {
 								font-size: 	12px;
-								text-align: 	justify;
 							}	
 					}
 					&__persondiv {
@@ -58,6 +80,10 @@
 						&__name {
 							font-size: 	12px;
 							margin-left: 10px;	
+							text-decoration: underline;
+						}
+						&__picture	 {
+							width: 35px;	
 						}
 					}			
 				}
