@@ -34,12 +34,14 @@
 
 
 .navbarContainer {
+	    box-shadow: 0 15px 0 black;
 	&__navbarMiddle {
 		height: 100%;
 		width: 940px;
 		margin: auto;
 		display: flex;
 		flex-direction: line;
+
 		&__logoContainer {
 			flex: 1;
 			display: flex;
@@ -85,6 +87,14 @@
 			align-items: center;
 			flex: 3;
 			margin: auto;
+			&__search {
+				
+			}
+			&__button {
+				padding: 10px;	
+				height: 35px;	
+				background: $color3;
+			}
 		}
 	}
 }
